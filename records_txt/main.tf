@@ -16,7 +16,7 @@ resource njalla_record_txt dmarc {
   domain = var.domain
   name = "_dmarc"
   ttl = 10800
-  content = "v=DMARC1; p=quarantine; rua=mailto:sighery@protonmail.com"
+  content = "v=DMARC1; p=reject; rua=mailto:sighery@protonmail.com"
 }
 
 resource njalla_record_txt dkim {
