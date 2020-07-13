@@ -1,14 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
-**/.terraform/plugins/*
-**/.terraform/plugins/linux_amd64/*
 
-# As of now Terraform Cloud doesn't provider an easy solution for when using
-# community or third-party plugins. You have to bundle them in your VCS.
-# Track the terraform-provider-njalla plugin
-!**/.terraform/plugins/
-!**/.terraform/plugins/linux_amd64/
-!**/.terraform/plugins/linux_amd64/terraform-provider-njalla_v*
+terraform.d/plugins/*/lock.json
 
 # .tfstate files
 *.tfstate

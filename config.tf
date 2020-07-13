@@ -7,4 +7,8 @@ terraform {
       name = "sigherycom-dns-records"
     }
   }
+
+  required_providers {
+    njalla = "~> 0.1.0"
+  }
 }
