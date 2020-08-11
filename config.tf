@@ -1,6 +1,8 @@
 terraform {
+  required_version = ">= 0.13"
+
   backend remote {
-    hostname = "app.terraform.io"
+    hostname     = "app.terraform.io"
     organization = "sighery"
 
     workspaces {
@@ -9,6 +11,9 @@ terraform {
   }
 
   required_providers {
-    njalla = "~> 0.1.0"
+    njalla = {
+      source  = "Sighery/njalla"
+      version = "~> 0.9.0"
+    }
   }
 }
