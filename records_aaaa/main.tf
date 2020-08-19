@@ -18,3 +18,10 @@ resource njalla_record_aaaa archrepo-domain {
   ttl = 10800
   content = "2001:41d0:401:3200::c26"
 }
+
+resource njalla_record_aaaa webhooks-domain {
+  domain = var.domain
+  name = "webhooks"
+  ttl = 10800
+  content = "2001:41d0:401:3200::c26"
+}
